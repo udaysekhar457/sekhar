@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.2 on win32)" generated="2024-02-20T08:58:09.207298" rpa="false" schemaversion="5">
+<suite id="s1" name="Sample" source="C:\Users\HEMANTH\PycharmProjects\Robottt98\sample">
+<suite id="s1-s1" name="TC2" source="C:\Users\HEMANTH\PycharmProjects\Robottt98\sample\TC2.robot">
+<test id="s1-s1-t1" name="Check the waits" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:10.150294" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg time="2024-02-20T08:58:11.558298" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:58:10.149298" elapsed="19.436922"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T08:58:29.587218" elapsed="0.084998"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:29.679241" level="INFO">Typing text 'bheem' into text field 'xpath://*[@id="basicBootstrapForm"]/div[1]/div[1]/input'.</msg>
+<arg>xpath://*[@id="basicBootstrapForm"]/div[1]/div[1]/input</arg>
+<arg>bheem</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:58:29.675223" elapsed="0.322994"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-02-20T08:58:10.147299" elapsed="19.851918"/>
+</test>
+<test id="s1-s1-t2" name="Check to swtich to frames" line="20">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:30.003219" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Frames.html'.</msg>
+<msg time="2024-02-20T08:58:31.338768" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://demo.automationtesting.in/Frames.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:58:30.002216" elapsed="9.122397"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:39.126613" level="INFO">Selecting frame 'id:singleframe'.</msg>
+<arg>id:singleframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-02-20T08:58:39.125611" elapsed="0.338131"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:39.470739" level="INFO">Typing text 'ram' into text field 'xpath:/html/body/section/div/div/div/input'.</msg>
+<arg>xpath:/html/body/section/div/div/div/input</arg>
+<arg>ram</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:58:39.468737" elapsed="0.395097"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-02-20T08:58:39.865836" elapsed="0.010007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:39.879840" level="INFO">Clicking element 'xpath://a[normalize-space()='Iframe with in an Iframe']'.</msg>
+<arg>xpath://a[normalize-space()='Iframe with in an Iframe']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:58:39.878835" elapsed="0.738682"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-02-20T08:58:30.001216" elapsed="10.618309"/>
+</test>
+<test id="s1-s1-t3" name="Check to swtich to windows" line="28">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:40.625522" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<msg time="2024-02-20T08:58:42.157299" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://demo.automationtesting.in/Windows.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:58:40.624520" elapsed="9.251506"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:49.878026" level="INFO">Clicking element 'xpath://a[@href='http://www.selenium.dev']//button[@class='btn btn-info'][normalize-space()='click']'.</msg>
+<arg>xpath://a[@href='http://www.selenium.dev']//button[@class='btn btn-info'][normalize-space()='click']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:58:49.877026" elapsed="1.233414"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>title=Selenium</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:58:51.115442" elapsed="3.122508"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>get window title</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-20T08:58:54.238945" elapsed="0.001004"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-02-20T08:58:40.622520" elapsed="13.618429"/>
+</test>
+<status status="PASS" start="2024-02-20T08:58:09.340306" elapsed="44.904640"/>
+</suite>
+<suite id="s1-s2" name="TC3" source="C:\Users\HEMANTH\PycharmProjects\Robottt98\sample\TC3.robot">
+<test id="s1-s2-t1" name="Check the drag and drop" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:58:54.271948" level="INFO">Opening browser 'chrome' to base url 'https://jqueryui.com/droppable/'.</msg>
+<msg time="2024-02-20T08:58:55.903584" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://jqueryui.com/droppable/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:58:54.270945" elapsed="6.046356"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:59:00.329298" level="INFO">Selecting frame 'xpath://*[@id="content"]/iframe'.</msg>
+<arg>xpath://*[@id="content"]/iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-02-20T08:59:00.328299" elapsed="0.131000"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggable</arg>
+<arg>id:droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-02-20T08:59:00.461299" elapsed="0.840368"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-02-20T08:58:54.268947" elapsed="7.034715"/>
+</test>
+<test id="s1-s2-t2" name="Check the Mouse events" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:59:01.310670" level="INFO">Opening browser 'chrome' to base url 'https://jqueryui.com/droppable/'.</msg>
+<msg time="2024-02-20T08:59:02.459660" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://jqueryui.com/droppable/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:59:01.309667" elapsed="5.906022"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:59:07.279689" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="menu-top"]/li[5]/a'.</msg>
+<arg>xpath://*[@id="menu-top"]/li[5]/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:59:07.278688" elapsed="0.537999"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://*[@id="menu-top"]/li[5]/a</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:59:07.852218" elapsed="0.359000"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-02-20T08:59:01.307661" elapsed="6.906556"/>
+</test>
+<status status="PASS" start="2024-02-20T08:58:54.248945" elapsed="13.970269"/>
+</suite>
+<status status="PASS" start="2024-02-20T08:58:09.211302" elapsed="59.016914"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Sample">Sample</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="TC2">Sample.TC2</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="TC3">Sample.TC3</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-20T08:58:11.558298" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-02-20T08:58:31.338768" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-02-20T08:58:42.157299" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-02-20T08:58:55.903584" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-02-20T08:59:02.459660" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

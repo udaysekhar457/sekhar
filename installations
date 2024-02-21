@@ -1,0 +1,19 @@
+step1:Create a project
+
+Step2: install dependencies
+        1.pip install selenium
+        2.pip install webdriver-manager
+        3.pip install robotframework
+        4.pip install robotframework-seleniumlibrary
+Step3: install robot plugin
+       1.Go to File-->settings
+       2.Click on the plugins
+       3.Search plugin (Intellibot @seleniumLibrary)
+Step 4:
+       1.Downlaod and Place ur latest driver in the below path:
+         C:\Users\name\AppData\Local\Programs\Python\Python310\Scripts
+commands for tagging
+robot *.robot
+robot filename.robot
+robot -d results -i sanity -i regression .
+ robot --exclude  regression .

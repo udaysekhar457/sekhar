@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.2 on win32)" generated="2024-02-20T08:56:38.906650" rpa="false" schemaversion="5">
+<suite id="s1" name="Sample" source="C:\Users\HEMANTH\PycharmProjects\Robottt98\sample">
+<suite id="s1-s1" name="TC1" source="C:\Users\HEMANTH\PycharmProjects\Robottt98\sample\TC1.robot">
+<test id="s1-s1-t1" name="Select a value from the multi dropdown" line="11">
+<kw name="lauch the application">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:56:39.905654" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg time="2024-02-20T08:56:41.580666" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:56:39.904653" elapsed="9.501325"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-20T08:56:49.408994" elapsed="0.514970"/>
+</kw>
+<status status="PASS" start="2024-02-20T08:56:39.902651" elapsed="10.021874"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:56:49.926500" level="INFO">Clicking element 'id:checkbox1'.</msg>
+<arg>id:checkbox1</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:56:49.925501" elapsed="0.255996"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:56:50.189499" level="INFO">Clicking element 'id:msdd'.</msg>
+<arg>id:msdd</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:56:50.188498" elapsed="0.719706"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:56:50.909206" level="INFO">Clicking element 'xpath://a[text()='English']'.</msg>
+<arg>xpath://a[text()='English']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:56:50.909206" elapsed="0.309650"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:56:51.220856" level="INFO">Clicking element 'xpath://a[text()='Spanish']'.</msg>
+<arg>xpath://a[text()='Spanish']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:56:51.219856" elapsed="0.223015"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-02-20T08:56:39.901651" elapsed="11.550209"/>
+</test>
+<test id="s1-s1-t2" name="Select a value from the dropdown" line="19">
+<kw name="lauch the application">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:56:51.460853" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg time="2024-02-20T08:56:52.903530" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:56:51.460853" elapsed="8.378057"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-20T08:56:59.840900" elapsed="0.569006"/>
+</kw>
+<status status="PASS" start="2024-02-20T08:56:51.459855" elapsed="8.951062"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:00.431960" level="INFO">Selecting options from selection list 'id:Skills' by index 2.</msg>
+<arg>id:Skills</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2024-02-20T08:57:00.429904" elapsed="1.002110"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:01.442028" level="INFO">Selecting options from selection list 'id:Skills' by label Python.</msg>
+<arg>id:Skills</arg>
+<arg>Python</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-02-20T08:57:01.441014" elapsed="0.255001"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:01.700053" level="INFO">Selecting options from selection list 'id:Skills' by value Java.</msg>
+<arg>id:Skills</arg>
+<arg>Java</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-02-20T08:57:01.698018" elapsed="0.339994"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-02-20T08:56:51.457858" elapsed="10.582154"/>
+</test>
+<test id="s1-s1-t3" name="Check the waits" line="27">
+<kw name="lauch the application">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:02.046012" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg time="2024-02-20T08:57:03.649287" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:57:02.046012" elapsed="9.881553"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-20T08:57:11.928566" elapsed="0.960155"/>
+</kw>
+<status status="PASS" start="2024-02-20T08:57:02.045014" elapsed="10.844703"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-20T08:57:13.062785" elapsed="0.190140"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:13.505827" level="INFO">Typing text 'bheem' into text field 'xpath://*[@id="basicBootstrapForm"]/div[1]/div[1]/input'.</msg>
+<arg>xpath://*[@id="basicBootstrapForm"]/div[1]/div[1]/input</arg>
+<arg>bheem</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:57:13.502827" elapsed="3.452566"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-02-20T08:57:02.043009" elapsed="14.953383"/>
+</test>
+<status status="PASS" start="2024-02-20T08:56:39.067654" elapsed="37.951740"/>
+</suite>
+<suite id="s1-s2" name="TC3" source="C:\Users\HEMANTH\PycharmProjects\Robottt98\sample\TC3.robot">
+<test id="s1-s2-t1" name="Check the drag and drop" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:17.038391" level="INFO">Opening browser 'chrome' to base url 'https://jqueryui.com/droppable/'.</msg>
+<msg time="2024-02-20T08:57:19.782842" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://jqueryui.com/droppable/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:57:17.038391" elapsed="6.653332"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:23.754038" level="INFO">Selecting frame 'xpath://*[@id="content"]/iframe'.</msg>
+<arg>xpath://*[@id="content"]/iframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-02-20T08:57:23.753464" elapsed="1.254076"/>
+</kw>
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggable</arg>
+<arg>id:droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-02-20T08:57:25.009541" elapsed="1.107999"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-02-20T08:57:17.036389" elapsed="9.082149"/>
+</test>
+<test id="s1-s2-t2" name="Check the Mouse events" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:26.123540" level="INFO">Opening browser 'chrome' to base url 'https://jqueryui.com/droppable/'.</msg>
+<msg time="2024-02-20T08:57:27.801479" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://jqueryui.com/droppable/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-20T08:57:26.122539" elapsed="6.875861"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-02-20T08:57:33.012402" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="menu-top"]/li[5]/a'.</msg>
+<arg>xpath://*[@id="menu-top"]/li[5]/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:57:33.011424" elapsed="0.600971"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath://*[@id="menu-top"]/li[5]/a</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-20T08:57:33.614396" elapsed="0.354021"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-02-20T08:57:26.121543" elapsed="7.847850"/>
+</test>
+<status status="PASS" start="2024-02-20T08:57:17.026391" elapsed="16.947003"/>
+</suite>
+<status status="PASS" start="2024-02-20T08:56:38.930665" elapsed="55.047731"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">sanity</stat>
+<stat pass="3" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Sample">Sample</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="TC1">Sample.TC1</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="TC3">Sample.TC3</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-20T08:56:41.580666" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-02-20T08:56:52.903530" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-02-20T08:57:03.649287" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-02-20T08:57:19.782842" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-02-20T08:57:27.801479" level="WARN">The chromedriver version (120.0.6099.109) detected in PATH at C:\Users\HEMANTH\AppData\Local\Programs\Python\Python310\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
